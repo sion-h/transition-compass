@@ -1,5 +1,3 @@
----
-
 # Transition Compass (성인정 나침반)
 
 **Transition Compass**는 대한민국 내 성전환 권리 및 **성인정 모델(Affirmation Model)**에 관한 정보를 체계적으로 집약하여, 당사자가 필요한 정보와 절차를 한곳에서 확인할 수 있도록 설계된 통합 가이드 서비스입니다.
