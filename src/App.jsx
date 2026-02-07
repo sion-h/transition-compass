@@ -1413,8 +1413,7 @@ const TransitionCompassKR = () => {
               <div className="font-bold text-2xl">자기 이해 평가</div>
             </div>
             <div className="text-sm opacity-90 text-left">
-              디스포리아·유포리아·사회적·의료적 분석<br/>
-              경로 선택 없이 바로 시작
+              디스포리아·유포리아·사회적·의료적 분석
             </div>
           </button>
           
