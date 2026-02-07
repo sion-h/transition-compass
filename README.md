@@ -4,7 +4,7 @@
 
 ## 🔗 서비스 링크
 
-* [Transition Compass 바로가기](https://www.google.com/search?q=https://sion-h.github.io/transition-compass/)
+* [Transition Compass 바로가기](https://sion-h.github.io/transition-compass/)
 
 ---
 
