@@ -1,16 +1,71 @@
-# React + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Transition Compass (성인정 나침반)
 
-Currently, two official plugins are available:
+**Transition Compass**는 대한민국 내 성전환 권리 및 **성인정 모델(Affirmation Model)**에 관한 정보를 체계적으로 집약하여, 당사자가 필요한 정보와 절차를 한곳에서 확인할 수 있도록 설계된 통합 가이드 서비스입니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 서비스 링크
 
-## React Compiler
+* [Transition Compass 바로가기](https://www.google.com/search?q=https://sion-h.github.io/transition-compass/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧭 프로젝트의 목적
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+본 프로젝트는 정보의 불균형을 해소하고 당사자의 주체적인 삶을 지원하기 위해 제작되었습니다.
+
+* **통합 정보 제공**: 행정, 의료, 심리적 가이드라인의 단일화된 창구 역할
+* **효율적인 체크 시스템**: 필수 검사 항목 및 준비 사항의 시각화
+* **사용자 웰빙 우선**: 더 많은 사람의 심리적·신체적 안녕과 삶의 질 향상 지향
+
+---
+
+## 🚫 운영 및 배포 원칙 (필독)
+
+본 프로젝트는 특정 이념이나 철학적 논쟁을 위한 장이 아니며, 아래 원칙을 엄격히 고수합니다.
+
+1. **논쟁의 배제**: 본 서비스의 존재 이유, 개인의 정체성 유무, 정체성 간의 차이 및 정의에 대한 소모적인 논쟁은 일체 수용하지 않습니다.
+2. **객관성 유지**: 모든 내용은 감정적 호소보다 객관적인 데이터와 법적·의료적 절차 전달에 집중합니다.
+3. **의학적 면책 조항**:
+* 본 서비스는 전문적인 의료 진단이나 처방을 대체할 수 있는 **의학적 도구가 아닙니다.**
+* 제공되는 정보를 맹신하지 마십시오. 최종적인 의학적 판단과 절차는 반드시 전문 의료진 및 관련 전문가와의 상담을 통해 결정해야 합니다.
+
+
+
+---
+
+## 🤝 기여 방법 (Contribution)
+
+정확하고 풍부한 정보 업데이트를 위한 기여를 환영합니다.
+
+* **정보 수정 및 제보**: 잘못된 법적 절차나 최신 의료 정보는 [Issues] 탭에 남겨주세요.
+* **기술적 개선**: 성능 최적화나 UI 개선은 [Pull Request]를 통해 제안해 주세요.
+* **주의사항**: 기여 시 본 프로젝트의 '객관적 어조' 유지 원칙을 준수해야 하며, 정체성 관련 논쟁을 유발하는 제안은 반려될 수 있습니다.
+
+---
+
+## 🛠 기술 스택
+
+* **Framework**: React (Vite)
+* **Deployment**: GitHub Actions & GitHub Pages
+* **Environment**: Node.js 20
+
+---
+
+## 📄 라이선스 (License)
+
+본 프로젝트는 아래와 같이 저작권 및 이용 범위를 명시합니다.
+
+* **Software**: 본 프로젝트의 소스코드는 [MIT License](https://www.google.com/search?q=LICENSE)를 따릅니다.
+* **Content**: 본 서비스의 텍스트 및 정보 콘텐츠는 **CC BY-NC-ND 4.0** (저작자 표시, 비영리, 변경 금지)를 따릅니다.
+* 상업적 이용 및 임의 수정을 금합니다.
+
+
+
+---
+
+## ✍️ 작성자
+
+* **시온 (sion-h)**
+
+---
