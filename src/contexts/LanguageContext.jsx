@@ -3,10 +3,15 @@ import { translations, SCORE_LABELS } from '../locales/translations';
 
 const LanguageContext = createContext();
 
+const getBrowserLanguage = () => {
+  const stored = localStorage.getItem('language');
+  if (stored) return stored;
+  const browserLang = navigator?.languages?.[0] || navigator?.language || 'ko';
+  return browserLang.toLowerCase().startsWith('en') ? 'en' : 'ko';
+};
+
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(() => {
-    return localStorage.getItem('language') || 'ko';
-  });
+  const [language, setLanguage] = useState(() => getBrowserLanguage());
 
   useEffect(() => {
     localStorage.setItem('language', language);
