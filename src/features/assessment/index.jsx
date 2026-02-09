@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useAssessment } from '../../contexts/AssessmentContext';
+import { useLanguage } from '../../contexts/LanguageContext';
 import ProgressBar from '../../shared/components/ProgressBar';
 import AssessmentStep1 from './components/AssessmentStep1';
 import AssessmentStep2 from './components/AssessmentStep2';
@@ -11,6 +12,7 @@ import AssessmentResults from './components/AssessmentResults';
 
 const Assessment = ({ onNavigateHome }) => {
   const { state, setStep } = useAssessment();
+  const { t } = useLanguage();
   const { step } = state;
 
   const renderStep = () => {
@@ -42,7 +44,7 @@ const Assessment = ({ onNavigateHome }) => {
           className="flex items-center gap-2 px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <ChevronLeft className="w-5 h-5" />
-          이전
+          {t('prev')}
         </button>
 
         {step < 6 && (
@@ -50,7 +52,7 @@ const Assessment = ({ onNavigateHome }) => {
             onClick={() => setStep(step + 1)}
             className="flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700"
           >
-            다음
+            {t('next')}
             <ChevronRight className="w-5 h-5" />
           </button>
         )}

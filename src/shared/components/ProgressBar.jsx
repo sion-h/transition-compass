@@ -1,14 +1,16 @@
 import React from 'react';
 import { Home } from 'lucide-react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const ProgressBar = ({ currentStep, totalSteps, onHomeClick }) => {
+  const { t } = useLanguage();
   const progress = (currentStep / totalSteps) * 100;
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-sm mb-6">
       <div className="flex items-center justify-between mb-2">
         <div className="text-sm font-medium">
-          진행: {currentStep}/{totalSteps}
+          {t('progress')}: {currentStep}/{totalSteps}
         </div>
         {onHomeClick && (
           <button
@@ -16,7 +18,7 @@ const ProgressBar = ({ currentStep, totalSteps, onHomeClick }) => {
             className="px-3 py-1 text-sm bg-gray-200 hover:bg-gray-300 rounded flex items-center gap-1"
           >
             <Home className="w-3 h-3" />
-            처음으로
+            {t('home')}
           </button>
         )}
       </div>
