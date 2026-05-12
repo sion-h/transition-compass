@@ -27,7 +27,7 @@ const Info = ({ onNavigateHome, onStartAssessment }) => {
           </h2>
           <button
             onClick={onNavigateHome}
-            className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded flex items-center gap-2"
+            className="px-4 py-2 bg-white border border-trans-pink text-rose-700 rounded flex items-center gap-2 hover:bg-trans-pink/10 transition-colors"
           >
             <Home className="w-4 h-4" />
             처음으로
@@ -43,8 +43,8 @@ const Info = ({ onNavigateHome, onStartAssessment }) => {
                 onClick={() => setInfoSection(section.id)}
                 className={`flex items-center gap-2 px-4 py-2 rounded text-sm ${
                   infoSection === section.id
-                    ? 'bg-purple-600 text-white'
-                    : 'bg-gray-100 hover:bg-gray-200'
+                    ? 'bg-trans-blue text-gray-800'
+                    : 'bg-white/60 hover:bg-white/80 text-gray-700'
                 }`}
               >
                 <Icon className="w-4 h-4" />
@@ -65,7 +65,7 @@ const Info = ({ onNavigateHome, onStartAssessment }) => {
       <div className="mt-8 text-center">
         <button
           onClick={onStartAssessment}
-          className="px-8 py-4 bg-gradient-to-r from-green-500 to-teal-600 text-white rounded-lg hover:from-green-600 hover:to-teal-700 shadow-lg text-lg font-semibold"
+          className="px-8 py-4 bg-trans-blue text-gray-800 rounded-lg hover:opacity-90 shadow-lg text-lg font-semibold transition-opacity"
         >
           자기 이해 평가 시작 →
         </button>

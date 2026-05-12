@@ -15,16 +15,16 @@ const ProgressBar = ({ currentStep, totalSteps, onHomeClick }) => {
         {onHomeClick && (
           <button
             onClick={onHomeClick}
-            className="px-3 py-1 text-sm bg-gray-200 hover:bg-gray-300 rounded flex items-center gap-1"
+            className="px-3 py-1 text-sm bg-white border border-trans-pink text-rose-700 rounded flex items-center gap-1 hover:bg-trans-pink/10 transition-colors"
           >
             <Home className="w-3 h-3" />
             {t('home')}
           </button>
         )}
       </div>
-      <div className="w-full bg-gray-200 rounded-full h-2">
+      <div className="w-full bg-white/50 rounded-full h-2">
         <div
-          className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full transition-all duration-300"
+          className="bg-gradient-to-r from-trans-blue to-trans-pink h-2 rounded-full transition-all duration-300"
           style={{ width: `${progress}%` }}
         />
       </div>

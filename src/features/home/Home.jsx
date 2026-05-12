@@ -7,8 +7,10 @@ const Home = ({ onStartAssessment, onViewInfo }) => {
 
   return (
     <div className="max-w-3xl mx-auto space-y-6">
-      <div className="bg-white p-8 rounded-lg shadow-sm border-2 border-purple-200">
-        <h1 className="text-3xl font-bold text-purple-900 mb-4">{t('homeTitle')}</h1>
+      <div className="bg-white p-8 rounded-lg shadow-sm border-2 border-trans-blue">
+        <h1 className="text-3xl font-bold mb-4">
+          <span className="inline-block bg-gradient-to-r from-[#d45080] to-[#1a90d0] bg-clip-text text-transparent">{t('homeTitle')}</span>
+        </h1>
         <p className="text-gray-700 mb-6 leading-relaxed">{t('homeDesc')}</p>
 
         <div className="space-y-4 mb-6">
@@ -24,9 +26,9 @@ const Home = ({ onStartAssessment, onViewInfo }) => {
             </div>
           </div>
 
-          <div className="p-4 bg-blue-50 border border-blue-200 rounded">
-            <div className="font-bold text-blue-900">{t('homeNotRequiredTitle')}</div>
-            <div className="text-sm text-blue-800">
+          <div className="p-4 bg-sky-50 border border-trans-blue rounded">
+            <div className="font-bold text-sky-800">{t('homeNotRequiredTitle')}</div>
+            <div className="text-sm text-sky-700">
               {t('homeNotRequiredMsg')}
             </div>
           </div>
@@ -35,7 +37,7 @@ const Home = ({ onStartAssessment, onViewInfo }) => {
         <div className="grid md:grid-cols-2 gap-4">
           <button
             onClick={onStartAssessment}
-            className="p-8 bg-gradient-to-br from-green-500 to-teal-600 text-white rounded-lg hover:from-green-600 hover:to-teal-700 shadow-lg"
+            className="p-8 bg-trans-blue text-gray-800 rounded-lg hover:opacity-90 shadow-lg transition-opacity"
           >
             <div className="flex items-center gap-3 mb-3">
               <BarChart3 className="w-8 h-8" />
@@ -46,7 +48,7 @@ const Home = ({ onStartAssessment, onViewInfo }) => {
             </div>
           </button>
 
-          <div className="p-8 bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-lg">
+          <div className="p-8 bg-trans-pink text-gray-800 rounded-lg">
             <div className="flex items-center gap-3 mb-3">
               <BookOpen className="w-8 h-8" />
               <div className="font-bold text-2xl">{t('homeInfoTitle')}</div>
@@ -58,13 +60,13 @@ const Home = ({ onStartAssessment, onViewInfo }) => {
             <div className="grid grid-cols-2 gap-2">
               <button
                 onClick={() => onViewInfo('mtf')}
-                className="py-3 bg-pink-500 hover:bg-pink-600 rounded font-semibold transition-colors"
+                className="py-3 bg-white hover:bg-white/80 rounded font-semibold transition-colors text-gray-800"
               >
                 MTF
               </button>
               <button
                 onClick={() => onViewInfo('ftm')}
-                className="py-3 bg-blue-500 hover:bg-blue-600 rounded font-semibold transition-colors"
+                className="py-3 bg-white hover:bg-white/80 rounded font-semibold transition-colors text-gray-800"
               >
                 FTM
               </button>

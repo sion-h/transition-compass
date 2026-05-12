@@ -26,12 +26,12 @@ const AppContent = () => {
   const { language, setLanguage, t } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 p-4 py-8 relative">
+    <div className="min-h-screen bg-gradient-to-b from-trans-pink via-white to-trans-blue p-4 py-8 relative">
       <div className="absolute top-4 right-4 flex gap-2 z-10">
         <button
           onClick={() => setLanguage('ko')}
           className={`px-3 py-1.5 rounded text-sm font-medium transition-colors ${
-            language === 'ko' ? 'bg-purple-600 text-white' : 'bg-white/80 text-gray-600 hover:bg-gray-100'
+            language === 'ko' ? 'bg-trans-blue text-gray-800' : 'bg-white/60 text-gray-600 hover:bg-white/80'
           }`}
         >
           {t('langKo')}
@@ -39,7 +39,7 @@ const AppContent = () => {
         <button
           onClick={() => setLanguage('en')}
           className={`px-3 py-1.5 rounded text-sm font-medium transition-colors ${
-            language === 'en' ? 'bg-purple-600 text-white' : 'bg-white/80 text-gray-600 hover:bg-gray-100'
+            language === 'en' ? 'bg-trans-blue text-gray-800' : 'bg-white/60 text-gray-600 hover:bg-white/80'
           }`}
         >
           {t('langEn')}

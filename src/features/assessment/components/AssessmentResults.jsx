@@ -117,10 +117,10 @@ const AssessmentResults = () => {
       {/* 맞춤 솔루션 */}
       <div className={`p-6 rounded-lg border-2 ${
         solution.type === 'wait' ? 'bg-yellow-50 border-yellow-400' :
-        solution.type === 'social' ? 'bg-green-50 border-green-400' :
-        solution.type === 'medical' ? 'bg-blue-50 border-blue-400' :
-        solution.type === 'explore' ? 'bg-purple-50 border-purple-400' :
-        'bg-indigo-50 border-indigo-400'
+        solution.type === 'social' ? 'bg-sky-50 border-trans-blue' :
+        solution.type === 'medical' ? 'bg-rose-50 border-trans-pink' :
+        solution.type === 'explore' ? 'bg-sky-50 border-trans-blue' :
+        'bg-rose-50 border-trans-pink'
       }`}>
         <h3 className="text-2xl font-bold mb-3">{solution.primary}</h3>
         <p className="text-gray-700 mb-4">{solution.reason}</p>

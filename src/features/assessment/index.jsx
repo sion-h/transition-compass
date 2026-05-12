@@ -37,11 +37,11 @@ const Assessment = ({ onNavigateHome }) => {
 
       {renderStep()}
 
-      <div className="flex justify-between mt-6">
+      <div className="flex justify-between mt-6 bg-white/70 backdrop-blur-sm rounded-xl p-3">
         <button
           onClick={() => setStep(Math.max(1, step - 1))}
           disabled={step === 1}
-          className="flex items-center gap-2 px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="flex items-center gap-2 px-6 py-3 bg-white border-2 border-trans-pink text-rose-700 rounded-lg hover:bg-trans-pink/20 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
           <ChevronLeft className="w-5 h-5" />
           {t('prev')}
@@ -50,7 +50,7 @@ const Assessment = ({ onNavigateHome }) => {
         {step < 6 && (
           <button
             onClick={() => setStep(step + 1)}
-            className="flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700"
+            className="flex items-center gap-2 px-6 py-3 bg-trans-blue text-white rounded-lg hover:opacity-90"
           >
             {t('next')}
             <ChevronRight className="w-5 h-5" />
