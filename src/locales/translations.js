@@ -6,7 +6,7 @@
 export const SCORE_LABELS = {
   ko: {
     // dysphoria
-    신체: '신체',
+    신체: '젠더표현',
     목소리: '목소리',
     가슴: '가슴',
     성기: '성기',
